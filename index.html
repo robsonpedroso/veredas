@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Veredas Linux</title>
+  <meta name="description" content="Veredas: distribuição Linux brasileira baseada no Ubuntu 26.04 LTS, com edições KDE Plasma e Trinity. Tecnologia livre. Caminhos abertos.">
+  <meta name="theme-color" content="#0c2a2e">
+  <meta property="og:title" content="Veredas Linux">
+  <meta property="og:description" content="Distribuição Linux baseada no Ubuntu 26.04 LTS, em português, com edições KDE Plasma e Trinity.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/veredas.jpg">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap topbar__inner">
+    <a class="brand" href="#inicio">
+      <img src="assets/logo.svg" alt="" width="32" height="32">
+      <span>Veredas</span>
+    </a>
+    <button type="button" class="menu-btn" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="menu" class="nav">
+      <a href="#sobre">Sobre</a>
+      <a href="#nome">O nome</a>
+      <a href="#edicoes">Edições</a>
+      <a href="#sistema">Sistema</a>
+      <a href="#instalacao">Instalação</a>
+      <a href="#download" class="nav__cta">Baixar</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- Hero -->
+  <section id="inicio" class="hero">
+    <div class="wrap hero__inner">
+      <div class="hero__text">
+        <p class="eyebrow">Versão 1.00 · baseado no Ubuntu 26.04 LTS</p>
+        <h1>Veredas <span>Linux</span></h1>
+        <p class="tagline">Tecnologia livre. Caminhos abertos.</p>
+        <p class="lead">Uma distribuição Linux brasileira, pronta em português desde o primeiro boot, com duas edições de área de trabalho: <strong>KDE Plasma</strong> e <strong>Trinity</strong>.</p>
+        <div class="actions">
+          <a class="btn btn--primary" href="#download">Baixar o Veredas</a>
+          <a class="btn btn--ghost" href="#sobre">Conhecer</a>
+        </div>
+      </div>
+      <figure class="hero__shot">
+        <img src="assets/veredas.jpg" alt="Papel de parede padrão do Veredas: um ipê amarelo no cerrado ao nascer do sol, com uma estrada de terra e o logotipo Veredas Linux" width="1280" height="720">
+      </figure>
+    </div>
+  </section>
+
+  <!-- Sobre -->
+  <section id="sobre" class="section">
+    <div class="wrap">
+      <p class="eyebrow">Sobre o sistema</p>
+      <h2>Construído sobre o Ubuntu</h2>
+      <div class="grid grid--2">
+        <div>
+          <p>O Veredas é baseado no <strong>Ubuntu 26.04 LTS</strong> (“Resolute”), para computadores de 64 bits (amd64). Usa o kernel HWE e os repositórios oficiais do Ubuntu (main, restricted, universe e multiverse), então recebe as mesmas atualizações de segurança e suporte de longo prazo.</p>
+          <p>A ISO é gerada por um script próprio, no mesmo modelo do Linux Mint: o sistema é montado do zero com <code>debootstrap</code>, configurado dentro de um chroot, compactado em <code>squashfs</code> e empacotado numa ISO híbrida que dá boot tanto em BIOS quanto em UEFI.</p>
+        </div>
+        <ul class="facts">
+          <li><span>Base</span><strong>Ubuntu 26.04 LTS</strong></li>
+          <li><span>Arquitetura</span><strong>amd64 (64 bits)</strong></li>
+          <li><span>Kernel</span><strong>linux-generic HWE</strong></li>
+          <li><span>Boot</span><strong>BIOS e UEFI</strong></li>
+          <li><span>Idioma</span><strong>Português (Brasil)</strong></li>
+          <li><span>Compatível com</span><strong>pacotes .deb e PPAs do Ubuntu</strong></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Nome -->
+  <section id="nome" class="section section--dark">
+    <div class="wrap grid grid--name">
+      <img class="name__logo" src="assets/logo.svg" alt="Logo do Veredas: dois caminhos verdes formando um V, com o sol nascendo entre eles" width="220" height="220">
+      <div>
+        <p class="eyebrow">O nome</p>
+        <h2>Por que “Veredas”?</h2>
+        <p><em>Vereda</em> é um caminho estreito, uma trilha que se abre no meio do mato. Também é o nome das veredas do cerrado brasileiro, com seus buritis e nascentes. O logo mostra <strong>dois caminhos que se encontram</strong> formando o “V”, com o <strong>sol nascendo</strong> entre eles.</p>
+        <p>O nome também vem de uma passagem da Bíblia:</p>
+        <blockquote class="verse">
+          <p>“Confia no Senhor de todo o teu coração, e não te estribes no teu próprio entendimento. Reconhece-o em todos os teus caminhos, e ele endireitará as tuas veredas.”</p>
+          <cite>Provérbios 3:5-6</cite>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- Diferenciais -->
+  <section id="diferenciais" class="section">
+    <div class="wrap">
+      <p class="eyebrow">Diferenciais</p>
+      <h2>Pensado para quem quer só usar</h2>
+      <div class="grid grid--3 cards">
+        <article class="card">
+          <h3>Sem snap</h3>
+          <p>O snap vem bloqueado, como no Linux Mint. Os programas são instalados como pacotes .deb tradicionais ou pelo Flatpak.</p>
+        </article>
+        <article class="card">
+          <h3>Firefox em .deb</h3>
+          <p>O Firefox vem direto do repositório oficial da Mozilla, já em português, e não como snap.</p>
+        </article>
+        <article class="card">
+          <h3>Flathub pronto</h3>
+          <p>O Flathub já vem configurado, com acesso a milhares de aplicativos sem precisar mexer em nada.</p>
+        </article>
+        <article class="card">
+          <h3>Brasileiro por padrão</h3>
+          <p>Português do Brasil, teclado ABNT2 e fuso horário de São Paulo já definidos na instalação.</p>
+        </article>
+        <article class="card">
+          <h3>Compatível com Ubuntu</h3>
+          <p>Por baixo é Ubuntu: tutoriais, pacotes .deb e PPAs do Ubuntu funcionam normalmente.</p>
+        </article>
+        <article class="card">
+          <h3>Ferramentas de rede</h3>
+          <p>Vem com o <code>netdiscover</code>, para descobrir os dispositivos da sua rede local.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Edições -->
+  <section id="edicoes" class="section section--alt">
+    <div class="wrap">
+      <p class="eyebrow">Edições</p>
+      <h2>Duas áreas de trabalho, o mesmo sistema</h2>
+      <p class="section__intro">As duas edições têm a mesma base, os mesmos drivers e o mesmo instalador. Muda só a interface gráfica: escolha a que combina com você e com o seu computador.</p>
+      <div class="grid grid--2">
+        <article class="edition">
+          <img class="edition__shot" src="assets/screens/plasma.svg" alt="Captura de tela da edição KDE Plasma (em breve)" width="1280" height="720" loading="lazy">
+          <div class="edition__body">
+            <h3>KDE Plasma <span class="badge">Padrão</span></h3>
+            <p>Moderna e completa. A área de trabalho Plasma 6, com visual Breeze, funciona em X11 e Wayland.</p>
+            <ul class="list">
+              <li>Login pelo SDDM com tema Breeze</li>
+              <li>Loja Discover com suporte a Flatpak</li>
+              <li>Integração de aparência com apps GTK</li>
+              <li>Konsole, Dolphin, KWrite e Ark</li>
+              <li>Configurações do Sistema do KDE</li>
+            </ul>
+            <p class="edition__size">ISO de ~1,75 GB</p>
+          </div>
+        </article>
+        <article class="edition">
+          <img class="edition__shot" src="assets/screens/trinity.svg" alt="Captura de tela da edição Trinity (em breve)" width="1280" height="720" loading="lazy">
+          <div class="edition__body">
+            <h3>Trinity <span class="badge badge--sun">Leve</span></h3>
+            <p>Clássica e leve. O Trinity (TDE 14.1) é a continuação do KDE 3.5, ideal para computadores mais antigos. Roda em X11.</p>
+            <ul class="list">
+              <li>Visual Plastik com ícones Crystal</li>
+              <li>Painel inferior com o menu K e 4 áreas de trabalho</li>
+              <li>Login TDM, splash e Plymouth com o tema Veredas</li>
+              <li>Konqueror, Konsole, Kate, KCalc, KPDF e Gwenview</li>
+              <li>Synaptic para instalar programas, e Flatpak pelo terminal</li>
+            </ul>
+            <p class="edition__size">ISO de ~1,38 GB</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sistema -->
+  <section id="sistema" class="section">
+    <div class="wrap">
+      <p class="eyebrow">Configurações do sistema</p>
+      <h2>O que vem instalado</h2>
+      <div class="table-wrap">
+        <table class="spec">
+          <tbody>
+            <tr><th scope="row">Áudio</th><td>PipeWire</td></tr>
+            <tr><th scope="row">Rede</th><td>NetworkManager, Wi-Fi (wpasupplicant) e systemd-resolved</td></tr>
+            <tr><th scope="row">Bluetooth</th><td>BlueZ</td></tr>
+            <tr><th scope="row">Hardware</th><td>linux-firmware e microcódigo Intel e AMD</td></tr>
+            <tr><th scope="row">Navegador</th><td>Firefox (.deb oficial da Mozilla, em português)</td></tr>
+            <tr><th scope="row">Programas</th><td>Flatpak com Flathub; Discover (Plasma) ou Synaptic (Trinity)</td></tr>
+            <tr><th scope="row">Discos</th><td>Suporte a NTFS, exFAT e FAT; zip, unzip e zstd</td></tr>
+            <tr><th scope="row">Fontes</th><td>Liberation, DejaVu e Noto Color Emoji</td></tr>
+            <tr><th scope="row">Gráfico</th><td>Xorg; Wayland também na edição Plasma</td></tr>
+            <tr><th scope="row">Boot</th><td>GRUB com Secure Boot (shim assinado) e Plymouth</td></tr>
+            <tr><th scope="row">Região</th><td>pt_BR.UTF-8, teclado ABNT2, America/Sao_Paulo</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3 class="sub">Cores do Veredas</h3>
+      <ul class="palette">
+        <li><span class="sw sw--green"></span>Verde vereda<code>#1fb978</code></li>
+        <li><span class="sw sw--teal"></span>Azul-petróleo<code>#0b6b80</code></li>
+        <li><span class="sw sw--deep"></span>Mata escura<code>#0c2a2e</code></li>
+        <li><span class="sw sw--sun"></span>Sol nascente<code>#ffd25a</code></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Instalação -->
+  <section id="instalacao" class="section section--dark">
+    <div class="wrap">
+      <p class="eyebrow">Live boot e instalador</p>
+      <h2>Experimente antes de instalar</h2>
+      <div class="grid grid--2">
+        <div>
+          <h3>Sessão live</h3>
+          <p>Dê boot pelo pendrive e o Veredas abre direto na área de trabalho, sem instalar nada e sem pedir senha. Você usa o sistema de verdade e, quando quiser, clica no ícone <strong>“Instalar o Veredas”</strong>.</p>
+          <p>O menu de boot oferece:</p>
+          <ol class="list list--num">
+            <li><strong>Experimentar ou instalar o Veredas</strong></li>
+            <li><strong>Modo de vídeo seguro</strong>, para placas de vídeo que dão problema</li>
+            <li><strong>Configurações do firmware UEFI</strong></li>
+          </ol>
+        </div>
+        <div>
+          <h3>Instalador Calamares</h3>
+          <p>A instalação é guiada, em poucos passos, com as cores do Veredas:</p>
+          <ol class="steps">
+            <li>Boas-vindas</li>
+            <li>Idioma e fuso</li>
+            <li>Teclado</li>
+            <li>Partições</li>
+            <li>Usuário</li>
+            <li>Resumo</li>
+          </ol>
+          <ul class="list">
+            <li>Sistema de arquivos ext4, btrfs (com compressão zstd) ou xfs</li>
+            <li>Criptografia de disco (LUKS) opcional</li>
+            <li>Arquivo de swap automático</li>
+            <li>Instala ao lado do Windows (dual boot)</li>
+            <li>O sistema instalado funciona com Secure Boot ligado</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Requisitos -->
+  <section id="requisitos" class="section">
+    <div class="wrap">
+      <p class="eyebrow">Requisitos</p>
+      <h2>Do que você precisa</h2>
+      <div class="grid grid--3 cards">
+        <article class="card">
+          <h3>Mínimo</h3>
+          <ul class="list">
+            <li>Processador de 64 bits</li>
+            <li>2 GB de RAM</li>
+            <li>15 GB de disco</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Máquina virtual</h3>
+          <p>No VirtualBox, use pelo menos <strong>4 GB de RAM</strong> e <strong>25 GB de disco</strong>.</p>
+        </article>
+        <article class="card">
+          <h3>Pendrive</h3>
+          <p>Grave a ISO com o <strong>Rufus</strong> (escolha o modo DD) ou copie para um pendrive com <strong>Ventoy</strong>.</p>
+        </article>
+      </div>
+      <p class="note"><strong>Atenção:</strong> a ISO live ainda não é assinada para Secure Boot. Para dar boot pelo pendrive (ou no Hyper-V), desligue o Secure Boot. Depois de instalado, ele pode ser ligado de novo.</p>
+    </div>
+  </section>
+
+  <!-- Download -->
+  <section id="download" class="section section--alt">
+    <div class="wrap">
+      <p class="eyebrow">Download</p>
+      <h2>Baixe o Veredas 1.00</h2>
+      <div class="grid grid--2">
+        <article class="dl">
+          <h3>KDE Plasma</h3>
+          <p class="dl__file">veredas-1.00-amd64.iso · ~1,75 GB</p>
+          <a class="btn btn--primary" data-iso="veredas-1.00-amd64.iso" href="https://github.com/robsonpedroso/veredas/releases/download/v1.00/veredas-1.00-amd64.iso">Baixar edição Plasma</a>
+          <div class="hash">
+            <span>SHA256</span>
+            <code>e0c0efe8a65e40d02e087a69caef40d97bf153c762bc5e3d0a3f7f4a70690d9e</code>
+            <button class="copy" type="button">Copiar</button>
+          </div>
+        </article>
+        <article class="dl">
+          <h3>Trinity</h3>
+          <p class="dl__file">veredas-1.00-amd64-trinity.iso · ~1,38 GB</p>
+          <a class="btn btn--primary" data-iso="veredas-1.00-amd64-trinity.iso" href="https://github.com/robsonpedroso/veredas/releases/download/v1.00/veredas-1.00-amd64-trinity.iso">Baixar edição Trinity</a>
+          <div class="hash">
+            <span>SHA256</span>
+            <code>5cc1377b4769238e5ce9eef50685a277ad0367791fb51f07cbc0b58218fcc767</code>
+            <button class="copy" type="button">Copiar</button>
+          </div>
+        </article>
+      </div>
+      <p class="note">Para conferir o arquivo baixado: no Linux, rode <code>sha256sum veredas-1.00-amd64.iso</code>; no Windows, <code>certutil -hashfile veredas-1.00-amd64.iso SHA256</code>. O resultado tem que ser igual ao código acima.</p>
+    </div>
+  </section>
+
+  <!-- Autor -->
+  <section id="autor" class="section">
+    <div class="wrap author">
+      <img src="assets/logo.svg" alt="" width="72" height="72">
+      <div>
+        <p class="eyebrow">Autor</p>
+        <h2>Robson Pedroso</h2>
+        <p>O Veredas foi criado e é mantido por Robson Pedroso.</p>
+        <a class="btn btn--ghost" href="https://github.com/robsonpedroso" rel="noopener">github.com/robsonpedroso</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <p><strong>Veredas 1.00</strong> · Tecnologia livre. Caminhos abertos.</p>
+    <p>Papéis de parede e arte sob licença CC-BY-SA-4.0. O Veredas é baseado no Ubuntu, mas não é afiliado nem endossado pela Canonical. Ubuntu é marca registrada da Canonical Ltd.</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

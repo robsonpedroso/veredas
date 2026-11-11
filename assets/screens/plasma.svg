@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b6b80"/>
+      <stop offset="1" stop-color="#0c2a2e"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="720" fill="url(#g)"/>
+  <rect x="380" y="140" width="520" height="340" rx="14" fill="#ffffff" fill-opacity=".08" stroke="#ffffff" stroke-opacity=".18"/>
+  <rect x="380" y="140" width="520" height="40" rx="14" fill="#ffffff" fill-opacity=".1"/>
+  <rect x="0" y="672" width="1280" height="48" fill="#06171f" fill-opacity=".85"/>
+  <circle cx="30" cy="696" r="14" fill="#1fb978"/>
+  <rect x="560" y="684" width="160" height="24" rx="12" fill="#ffffff" fill-opacity=".12"/>
+  <text x="640" y="320" text-anchor="middle" font-family="system-ui, sans-serif" font-size="44" font-weight="700" fill="#ffffff">KDE Plasma</text>
+  <text x="640" y="370" text-anchor="middle" font-family="system-ui, sans-serif" font-size="24" fill="#ffd25a">captura de tela em breve</text>
+</svg>

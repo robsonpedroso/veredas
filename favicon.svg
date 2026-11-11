@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <!-- Veredas: dois caminhos que se encontram (o "V") e o sol nascendo entre eles -->
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1fb978"/>
+      <stop offset="1" stop-color="#0b6b80"/>
+    </linearGradient>
+    <linearGradient id="sun" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffd25a"/>
+      <stop offset="1" stop-color="#ffab3d"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="16" y="16" width="224" height="224" rx="52" fill="url(#bg)"/>
+
+  <!-- sol -->
+  <circle cx="128" cy="84" r="17" fill="url(#sun)"/>
+
+  <!-- caminho da esquerda -->
+  <path d="M70 70 L128 190" fill="none" stroke="#ffffff"
+        stroke-width="30" stroke-linecap="round"/>
+  <!-- caminho da direita (mais suave: a outra vereda) -->
+  <path d="M186 70 L128 190" fill="none" stroke="#ffffff" stroke-opacity="0.78"
+        stroke-width="30" stroke-linecap="round"/>
+</svg>
