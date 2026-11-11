@@ -234,6 +234,19 @@ p { margin: 0 0 1em; }
 }
 .copy:hover { border-color: var(--accent); }
 
+/* Donate (cards sobre fundo escuro) */
+.section--dark .section__intro { color: #b9d0cb; }
+.section--dark .card { color: var(--text); }
+.section--dark .card h3 { color: var(--accent); }
+.section--dark .card code { background: color-mix(in srgb, var(--accent) 12%, transparent); }
+.donate { display: flex; flex-direction: column; min-width: 0; }
+.donate .hash { margin-top: 12px; }
+.donate__qr { width: 180px; margin: 4px auto 0; border-radius: 10px; border: 1px solid var(--border); background: #fff; }
+.donate__btn { margin-top: auto; align-self: flex-start; }
+.donate .hash + .donate__btn { margin-top: 20px; }
+.section--dark .donate a.btn--primary { color: var(--night); }
+.section--dark .donate a.btn--ghost { color: var(--accent); }
+
 /* Author */
 .author { display: flex; gap: 24px; align-items: flex-start; }
 .author h2 { margin-bottom: .3em; }
